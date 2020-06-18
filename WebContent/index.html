@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous">
+<link href="recursos/css/bootstrap.min.css" rel="stylesheet">
+<link href="recursos/css/estilos.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container c">
+	<header><h2 style="color: red;">Datos Alumno</h2></header>
+		<div class="row">
+			<div class=".col-6 .col-md-4 m">
+				<div class="container">
+					<div class="form-group">
+						<label for="a">Escuela:</label> 
+						<select class="form-control" id="esc">
+							<option>Selecccionar Escuela</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="a">Apellidos y Nombres:</label> <input type="text"
+							class="form-control" name="apellnombre" id="apellnombre">
+					</div>
+					<div class="form-group">
+						<label for="a">Correo:</label> <input type="text" class="form-control" name="correo" id="correo">
+					</div>
+					<div class="form-group">
+						<label for="a">Telefono:</label> <input type="text"
+							class="form-control" name="telefono" id="telefono" >
+							<input type="hidden" name="id" id="id" value="0">
+					</div>
+					<div class="form-group">
+						<button id="boton" class="btn btn-primary">Enviar</button>
+					</div>
+				</div>
+			</div>
+			<div class=".col-6 .col-md-4 m" >
+				<table class="table table-bordered" id="tablita">
+					<thead>
+						<tr class ="bg-info">
+							<th scope="col" style="color: white;">#</th>
+							<th scope="col" style="color: white;">Escuela</th>
+							<th scope="col" style="color: white;">Nombres y Apellidos</th>
+							<th scope="col" style="color: white;">Correo</th>
+							<th scope="col" style="color: white;">Telefono</th>
+							<th scope="col" style="color: white;" colspan="2">Operaciones</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="recursos/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="recursos/js/popper.min.js"></script>
+	<script type="text/javascript" src="recursos/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="recursos/js/bootbox.min.js"></script>
+	<script type="text/javascript" src="recursos/js/bootbox.locales.min.js"></script>
+	<script type="text/javascript" src="recursos/js/jquery.numeric.js"></script>
+	<script type="text/javascript" src="recursos/js/script.js?1"></script>
+</body>
+</html>
