@@ -10,7 +10,7 @@ $("#boton").click(function(){
 	var esc= $("#esc").val();	
 	var apell= $("#apellnombre").val();
 	var correo= $("#correo").val();
-	var tele = $("#telefono").val();
+	var telef = $("#telefono").val();
 	var id = $("#id").val();
 	if(id==0){
 		$.post("ac", {esc:esc,apell:apell,correo:correo,telef:telef, opc:3}).done(function(data){
@@ -21,7 +21,7 @@ $("#boton").click(function(){
 	}else{
 		bootbox.confirm("Desea Modificar?", function(result) {
 		if(result){
-		 	bootbox.alert("Registro Modificado Correctamente...!", function() {		
+		 	bootbox.alert("Registro Modificado Correctamente!", function() {		
 			$.post("ac", {idesc :esc, apell:apell, correo:correo, telef:telef, idp:id, opc:6}).done(function(data){
 				$("#id").val(0);
 				limpiar();
@@ -31,7 +31,7 @@ $("#boton").click(function(){
 			});
 		 	});
 		}else{
-	    	bootbox.alert("El registro no se Modifico...!");
+	    	bootbox.alert("El registro no se Modifico!");
 	    	limpiar();
 	    	listaes(0)
 			listarestudiante();
@@ -76,7 +76,7 @@ function listarestudiante(){
 function eliminar(id){	
 	bootbox.confirm("Desea Eliminar?", function(result) {
     if(result){
-    	bootbox.alert("Registro Eliminado :D...!", function() {
+    	bootbox.alert("Registro Eliminado!", function() {
     		$.get("ac",{id:id,opc:5},function(data){
      			limpiar();
      			listaes(0);
