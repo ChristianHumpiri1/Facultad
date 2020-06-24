@@ -21,7 +21,7 @@ public class AlumnoDaoImp implements AlumnoDao{
 	public int create(Alumno u) {
 		// TODO Auto-generated method stub
 		int x = 0;
-		String sql ="INSERT INTO producto (idalumno, idescuela, apellnombres, correo, telefono) VALUES (NULL, ?, ?, ?, ?)";
+		String sql ="INSERT INTO alumno (idalumno, idescuela, apellnombres, correo, telefono) VALUES (NULL, ?, ?, ?, ?)";
 		try {
 			cx = Conexion.getConexion();
 			ps = cx.prepareStatement(sql);

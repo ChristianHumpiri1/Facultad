@@ -17,8 +17,8 @@ public class Test {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		conex();
-		listarP();
+		//conex();
+		//listarP();
 		ListaC();
 		
  }
@@ -39,6 +39,7 @@ public class Test {
 		 System.out.println(g.toJson(es.readAll()));
 		
 	}
+	 
 
 
 	
