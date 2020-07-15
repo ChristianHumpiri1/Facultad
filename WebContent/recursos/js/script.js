@@ -67,7 +67,7 @@ function listarestudiante(){
 		for(i=0;i<d.length;i++){
 	
 			$("#tablita tbody").append("<tr><td style='color:blue'>"+c+"</td><td>"+d[i].nombre+"</td><td>"+d[i].apellnombre+"</td><td>"+d[i].correo+"</td><td>"+d[i].telefono+
-			"</td><td><a href='#' style='color:green' onclick='modificar("+d[i].idalumno+")'><i class='far fa-edit'></i></a></td><td><a href='#' style='color:red' onclick='eliminar("+d[i].idalumno+")'><i class='far fa-trash-alt'></i></a></td></tr>")
+			"</td><td><a href='#' style='color:green' onclick='modificar("+d[i].idalumno+")'><i class='far fa-edit' ></i></a></td><td><a href='#' style='color:red' onclick='eliminar("+d[i].idalumno+")'><i class='far fa-trash-alt'></i></a></td></tr>")
 			c++;
 		}
 	});
